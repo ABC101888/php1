@@ -40,8 +40,8 @@
 
                                 <div class="row">
                                     <div class="col-50">
-                                        <label for="state">Delivery Method</label>
- 										<p class="field"><?php echo $_SESSION['Delivery']; ?></p>
+                                        <label for="Shipping">Delivery Method</label>
+ 										<p class="field"><?php if(isset($output['Delivery'])){ echo $_SESSION['Delivery'];} ?></p>
                                     </div>
                                 </div>
                             </div>

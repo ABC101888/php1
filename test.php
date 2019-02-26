@@ -1,5 +1,6 @@
 <?php
     session_start();
+	ob_start();
 ?>
 
 <!DOCTYPE html>
@@ -243,7 +244,7 @@
 						if(mysqli_query($con, $sql))
 						{
 							echo "Order Confirmed!";
-							header("refresh:2;url=success.php");
+							header("Refresh:1; url=success.php");
 						} 
 						else
 						{
